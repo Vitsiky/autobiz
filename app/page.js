@@ -338,7 +338,7 @@ export default function Home() {
           alignItems: "center",
         }}>
           <span style={{ fontSize: "10px", color: "#2a2a2a", letterSpacing: "0.12em" }}>AUTOBIZ v1.0</span>
-          <span style={{ fontSize: "10px", color: "#2a2a2a", letterSpacing: "0.12em" }}>POWERED BY CLAUDE AI</span>
+          <span style={{ fontSize: "10px", color: "#2a2a2a", letterSpacing: "0.12em" }}>POWERED BY GOOGLE GEMINI</span>
         </div>
       </div>
     </main>
