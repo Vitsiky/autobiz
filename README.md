@@ -13,9 +13,9 @@ npm install
 ### 2. Configura la chiave API
 Crea un file `.env.local` nella cartella principale:
 ```
-GEMINI_API_KEY=xxxxxxxxxx
+GROQ_API_KEY=xxxxxxxxxx
 ```
-Ottieni la tua chiave gratuita su: https://aistudio.google.com/apikey
+Ottieni la tua chiave gratuita su: https://console.groq.com/keys
 
 ### 3. Avvia in locale
 ```bash
@@ -31,7 +31,7 @@ Apri http://localhost:3000
 2. Installa Vercel CLI: `npm i -g vercel`
 3. Esegui: `vercel`
 4. Vai su Vercel Dashboard → Settings → Environment Variables
-5. Aggiungi: `GEMINI_API_KEY` = la tua chiave
+5. Aggiungi: `GROQ_API_KEY` = la tua chiave
 6. Rideploya: `vercel --prod`
 
 ---
@@ -56,7 +56,7 @@ autobiz/
 
 ## ⚠️ Sicurezza
 - La chiave API è **solo nel backend** (`/api/genera`)
-- Chiamata a Google Gemini invece di Anthropic per restare nel free tier
+- Chiamata a Groq (Llama 3.3) invece di Anthropic per restare nel free tier
 - `.env.local` è in `.gitignore` — non finisce mai su GitHub
 - Il frontend chiama `/api/genera`, mai il provider AI direttamente
 
