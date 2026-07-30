@@ -10,10 +10,6 @@ body {
   font-family: 'DM Mono', 'Courier New', monospace;
 }
 
-input::placeholder {
-  color: #333;
-}
-
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -25,18 +21,9 @@ input::placeholder {
   border-radius: 2px;
 }
 
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
+button {
+  cursor: pointer;
 }
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes shimmer {
-  0% { opacity: 0.4; }
-  50% { opacity: 1; }
-  100% { opacity: 0.4; }
+button:disabled {
+  cursor: not-allowed;
 }

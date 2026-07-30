@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "AutoBiz — Automazione AI per PMI",
-  description: "Genera preventivi, email commerciali e report con l'AI",
+  title: "AutoBiz — Automazione documentale per PMI",
+  description: "Genera preventivi, email commerciali e report professionali in pochi secondi",
 };
 
 export default function RootLayout({ children }) {
