@@ -211,6 +211,9 @@ export default function Home() {
         <footer className="footer">
           <span>AUTOBIZ v1.0</span>
           <span>ELABORAZIONE 100% LOCALE</span>
+          <a href="https://www.instantweb.info" target="_blank" rel="noopener noreferrer" className="footer-credit">
+            Sito realizzato da Instant Web
+          </a>
         </footer>
       </div>
 
@@ -509,9 +512,21 @@ export default function Home() {
           display: flex;
           justify-content: space-between;
           align-items: center;
+          gap: 16px;
+          flex-wrap: wrap;
           font-size: 10px;
           color: #2a2a2a;
           letter-spacing: 0.12em;
+        }
+
+        .footer-credit {
+          color: #2a2a2a;
+          text-decoration: none;
+          transition: color 150ms ease;
+        }
+
+        .footer-credit:hover {
+          color: #ffc81e;
         }
 
         @keyframes pulse {
