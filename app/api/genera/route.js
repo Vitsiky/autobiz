@@ -23,6 +23,7 @@ export async function POST(req) {
     const data = await response.json();
 
     if (!response.ok) {
+      console.error("Anthropic API error:", response.status, JSON.stringify(data));
       return Response.json({ error: "Errore API" }, { status: 500 });
     }
 
